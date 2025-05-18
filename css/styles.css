@@ -1,7 +1,4 @@
 /* Reset básico */
-/* styles.css actualizado - Maratón La Plata */
-
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -9,99 +6,93 @@
 }
 
 body {
-  margin: 0;
-  padding-top: 120px; /* Igual a la altura del header */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5faff;
+  color: #333;
 }
 
-
-/* HEADER GENERAL */
+/* HEADER */
 header {
+  background-color: #e0f0ff;
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #ffffff;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
 }
 
-/* CONTENEDOR INTERNO DEL HEADER */
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: start;
-  padding: 10px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  height: 120px;
+  gap: 20px;
 }
 
-/* LOGO */
 .logo {
-  width: 80px;
+  max-width: 80px;
   height: auto;
-  margin-right: 20px;
 }
 
-/* GRUPO DE TÍTULOS */
 .title-group h1 {
   margin: 0;
-  font-size: 1.8em;
-  color: #333;
+  font-size: 24px;
+  color: #004080;
 }
 
 .title-group p {
   margin: 0;
-  font-size: 1em;
-  color: #666;
+  font-size: 14px;
+  color: #0066cc;
 }
 
-
+/* NAV */
 nav {
-  margin-top: 140px; /* Espacio para el header fijo */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
-  padding: 10px;
-  background-color: #ffffff;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background-color: #004080;
+  padding: 10px 20px;
+  gap: 15px;
+  position: sticky;
+  top: 100px; /* justo debajo del header */
+  z-index: 1000;
 }
 
 nav a {
-  background-color: #ffa726;
   color: white;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 8px;
   text-decoration: none;
-  transition: all 0.3s ease;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  background-color: #0066cc;
+  transition: background-color 0.3s;
 }
 
 nav a:hover {
-  background-color: #fb8c00;
-  transform: scale(1.05);
+  background-color: #003366;
 }
 
+/* MAIN */
 main {
-  max-width: 1200px;
-  margin: auto;
+  margin-top: 180px; /* deja espacio para el header y nav */
   padding: 20px;
 }
 
-main a {
-  color: #0288d1;
-  text-decoration: underline;
+/* IMAGEN PRINCIPAL */
+.imagen-principal {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
-main a:hover {
-  color: #01579b;
-}
-
+/* FOOTER */
 footer {
-  background-color: #002c3e;
+  background-color: #004080;
   color: white;
   text-align: center;
-  padding: 12px;
-  font-size: 14px;
+  padding: 20px 10px;
   margin-top: 40px;
 }
