@@ -9,34 +9,50 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f6f8;
-  color: #333;
-  line-height: 1.6;
+  margin: 0;
+  padding-top: 100px; /* Igual a la altura del header */
 }
 
+
+/* HEADER GENERAL */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* CONTENEDOR INTERNO DEL HEADER */
 .header-container {
   display: flex;
   align-items: center;
-  gap: 20px;
+  justify-content: start;
   padding: 10px 20px;
-  background-color: #f0f0f0; /* O el color que prefieras */
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100px;
 }
 
+/* LOGO */
 .logo {
   width: 80px;
   height: auto;
+  margin-right: 20px;
 }
 
+/* GRUPO DE TÍTULOS */
 .title-group h1 {
   margin: 0;
   font-size: 1.8em;
+  color: #333;
 }
 
 .title-group p {
   margin: 0;
   font-size: 1em;
-  color: #555;
+  color: #666;
 }
 
 
