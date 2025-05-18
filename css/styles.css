@@ -15,31 +15,30 @@ body {
   line-height: 1.6;
 }
 
-header {
-  background-color: #002c3e;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  border-bottom: 4px solid rgba(255, 255, 255, 0.1);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+  background-color: #f0f0f0; /* O el color que prefieras */
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-.logo img {
   width: 80px;
   height: auto;
 }
+
+.title-group h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+.title-group p {
+  margin: 0;
+  font-size: 1em;
+  color: #555;
+}
+
 
 nav {
   margin-top: 140px; /* Espacio para el header fijo */
