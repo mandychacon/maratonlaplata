@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Rutas - Maratón La Plata</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e3f2fd;
+      color: #0d47a1;
+    }
+    header {
+      background-color: #1565c0;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    main {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    .ruta-link {
+      display: block;
+      background-color: white;
+      color: #1565c0;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s;
+    }
+    .ruta-link:hover {
+      background-color: #bbdefb;
+    }
+    .boton-inicio {
+      display: inline-block;
+      margin-top: 40px;
+      background-color: #1565c0;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .boton-inicio:hover {
+      background-color: #0d47a1;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Rutas de la Maratón Ciudad de La Plata</h1>
+    <p>Seleccione la ruta que desea consultar</p>
+  </header>
+
+  <main>
+    <a class="ruta-link" href="ruta5k.html">Ruta 5K - Categoría corta</a>
+    <a class="ruta-link" href="ruta10k.html">Ruta 10K - Categoría media</a>
+    <a class="ruta-link" href="ruta21k.html">Ruta 21K - Media Maratón</a>
+    <a class="ruta-link" href="ruta42k.html">Ruta 42K - Maratón Completa</a>
+
+    <a href="index.html" class="boton-inicio">🏠 Volver al Inicio</a>
+  </main>
+
+</body>
+</html>

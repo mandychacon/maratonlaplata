@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Ruta 10K - Maratón La Plata</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e3f2fd;
+      color: #0d47a1;
+    }
+    header {
+      background-color: #1565c0;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+    }
+    .map-container {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+    .map-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .botones {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .botones a {
+      background: #1565c0;
+      color: white;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .botones a:hover {
+      background: #0d47a1;
+    }
+    footer {
+      background-color: #1565c0;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ruta 10K - Maratón Ciudad de La Plata</h1>
+    <p>Recorrido para categoría 10 kilómetros</p>
+  </header>
+
+  <div class="map-container">
+    <iframe name="plotaroute_map_2979094"
+      src="https://www.plotaroute.com/embedmap/2979094?units=km"
+      allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="botones">
+    <a href="rutas.html">⬅ Volver a Rutas</a>
+    <a href="index.html">🏠 Ir al Inicio</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Maratón La Plata | Armando Chacón Rodríguez
+  </footer>
+
+</body>
+</html>
+
