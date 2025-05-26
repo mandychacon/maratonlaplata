@@ -1,1 +1,3 @@
 Página Web básica, desarrollada como parte de un curso de Front-End, para facilitar digitalmente la compra-venta de bienes. La Página se estructura con HTML semántico utilizando etiquetas como <header>, <main>, y <futer>. El objetivo es aprender a crear la estructura básica  de una Página Web, preparándola para sus futuras mejoras con CSS y JavaScript.
+
+Página Web básica, desarrollada como parte de un curso de Front-End, para facilitar digitalmente la compra-venta de bienes. La Página se estructura con HTML semántico utilizando etiquetas como <header>, <main>, y <futer>. El objetivo es aprender a crear la estructura básica  de una Página Web, preparándola para sus futuras mejoras con CSS y JavaScript.
