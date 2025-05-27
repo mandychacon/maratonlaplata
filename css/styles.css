@@ -159,18 +159,39 @@ main {
   display: block;
 }
 
-.ruta-card .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 10px;
-  background-color: rgba(13, 71, 161, 0.7); /* azul oscuro semitransparente */
-  color: white;
-  font-weight: bold;
-  font-size: 1.2rem;
+/* Reseñas */
+#resenas {
+  margin: 40px 0;
   text-align: center;
 }
+
+.resenas-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.resena {
+  background-color: ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  word-wrap: break-word;
+}
+
+.resena p {
+  font-style: italic;
+  margin-bottom: 10px;
+  max-width: 100%
+}
+
+.resena h4 {
+  font-weight: normal;
+  color: #0d47a1;
+}
+
 
 
 /* Secciones */
@@ -210,4 +231,10 @@ footer {
   background-color: black;
   color: white;
   margin-top: 50px;
+}
+#resenas .resenas-container {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
