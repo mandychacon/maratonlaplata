@@ -3,64 +3,11 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/styles.css">
 
   <title>Rutas - Maratón La Plata</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #e3f2fd;
-      color: #0d47a1;
-    }
-    header {
-      background-color: #1565c0;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    main {
-      max-width: 600px;
-      margin: 40px auto;
-      padding: 0 20px;
-      text-align: center;
-    }
-    .ruta-link {
-      display: block;
-      background-color: white;
-      color: #1565c0;
-      font-weight: bold;
-      text-decoration: none;
-      padding: 15px;
-      margin: 15px 0;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: background-color 0.3s;
-    }
-    .ruta-link:hover {
-      background-color: #bbdefb;
-    }
-    .boton-inicio {
-      display: inline-block;
-      margin-top: 40px;
-      background-color: #1565c0;
-      color: white;
-      padding: 12px 25px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s;
-    }
-    .boton-inicio:hover {
-      background-color: #0d47a1;
-    }
-  </style>
+  
 </head>
 <body>
 
@@ -70,12 +17,30 @@
   </header>
 
   <main>
-  <a class="ruta-link" href="ruta5km.html">Ruta 5K - Categoría corta</a>
-  <a class="ruta-link" href="ruta10km.html">Ruta 10K - Categoría media</a>
-  <a class="ruta-link" href="ruta21km.html">Ruta 21K - Media Maratón</a>
-  <a class="ruta-link" href="ruta42km.html">Ruta 42K - Maratón Completa</a>
+  <main>
+  <section id="rutas">
+    <h2>Categorías del Maratón</h2>
+    <div class="rutas-container">
+      <a href="ruta5km.html" class="ruta-card">
+        <div class="overlay">5K</div>
+        <img src="/img/5K MARATHON.png" alt="Ruta 5K">
+      </a>
+      <a href="ruta10km.html" class="ruta-card">
+        <div class="overlay">10K</div>
+        <img src="/img/10KMARATHON.png" alt="Ruta 10K">
+      </a>
+      <a href="ruta21km.html" class="ruta-card">
+        <div class="overlay">21K</div>
+        <img src="/img/21KMARATHON.png" alt="Ruta 21K">
+      </a>
+      <a href="ruta42km.html" class="ruta-card">
+        <div class="overlay">42K</div>
+        <img src="/img/42 K.png" alt="Ruta 42K">
+      </a>
+    </div>
+  </section>
+</main>
 
-  <a href="index.html" class="boton-inicio">🏠 Volver al Inicio</a>
 </main>
 
 
