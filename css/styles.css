@@ -304,6 +304,49 @@ a:hover {
   background-color: #0d3c82;
 }
 
+/* Estilo para secciones multimedia */
+#foto-principal,
+#video-principal {
+  text-align: center;
+  padding: 40px 20px;
+}S
+
+#foto-principal h2,
+#video-principal h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ec0f22;
+}
+
+/* Imagen destacada */
+#foto-principal img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor responsivo para el iframe */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 800px;
+  margin: auto;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
 /* Estilos para el botón "Volver a Inicio" */
 
 div[style] a {
