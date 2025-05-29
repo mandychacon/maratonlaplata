@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Contacto</title>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head> 
+<body>
+  <header>
+    <div class="nav">
+      <nav>
+        <ul>
+          <li><a href="index.html"><i data-lucide="home"></i> Inicio</a></li>
+          <li><a href="rutas.html"><i data-lucide="map"></i> Rutas</a></li>
+          <li><a href="inscripcion.html"><i data-lucide="edit-3"></i> Inscripción</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="tiendas.html">Tiendas</a></li>
+          <li><a href="hoteles.html">Hoteles</a></li>
+          <li><a href="ciudad.html">Ciudad</a></li>
+          <li><a href="museos.html">Museos</a></li>
+          <li><a href="estadios.html">Clubes</a></li>
+          <li><a href="personalidades.html">Personajes</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <main>
+    <section id="contacto">
+      <h2>Contacto</h2>
+
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Botón para volver al Inicio -->
+  <div style="text-align:center; margin: 30px 0;">
+        <a href="index.html" style="background:#1565c0; color:white; padding:10px 20px; border-radius:8px; text-decoration:none;">
+          ⬅ Volver a Inicio
+        </a>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+
+  <a href="resenas.html" class="boton-flotante" title="Ver reseñas">
+  <i class="fas fa-comments"></i>
+  </a>
+</body>
+</html>

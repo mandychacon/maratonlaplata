@@ -241,6 +241,124 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Estilos generales para el formulario de contacto */
+
+#contacto {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+#contacto h2 {
+  text-align: center;
+  color: #1565c0;
+  margin-bottom: 20px;
+}
+
+#contacto form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contacto label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#contacto input[type="text"],
+#contacto input[type="email"],
+#contacto textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+#contacto input[type="text"]:focus,
+#contacto input[type="email"]:focus,
+#contacto textarea:focus {
+  border-color: #1565c0;
+  outline: none;
+}
+
+#contacto button {
+  margin-top: 20px;
+  background-color: #1565c0;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contacto button:hover {
+  background-color: #0d3c82;
+}
+
+/* Estilos para el botón "Volver a Inicio" */
+
+div[style] a {
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+div[style] a:hover {
+  background-color: #0d3c82;
+}
+
+/* Botón flotante de reseñas */
+
+.boton-flotante {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #1565c0;
+  color: white;
+  padding: 15px 18px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.boton-flotante:hover {
+  background-color: #0d3c82;
+}
+
+/* Media Queries para móviles */
+
+@media (max-width: 600px) {
+  #contacto {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  #contacto button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .boton-flotante {
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 14px;
+    font-size: 18px;
+  }
+}
+
+
 /* Footer */
 footer {
   text-align: center;
