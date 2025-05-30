@@ -333,7 +333,7 @@ a:hover {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
-  overflow: hidden;
+  overflow: visible;
   max-width: 800px;
   margin: auto;
 }
