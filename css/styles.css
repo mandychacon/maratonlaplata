@@ -26,7 +26,7 @@ header {
    position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: #1565c0;
+  background-color: #96b9e0;
   color: white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* sombra general */
 }
@@ -36,7 +36,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 20px;
+  padding: 10px;
 }
 
 /* Logo con sombra */
@@ -75,7 +75,7 @@ header {
 
 /* NAV */
 nav {
-  background-color: #1565c0;
+  background-color:  #96b9e0;
   width: 100%;
   border-top: 1px solid #0d47a1;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* sombra general */
