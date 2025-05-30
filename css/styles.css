@@ -23,12 +23,15 @@ h3 {
 
 /* HEADER */
 header {
-   position: sticky;
+   position: fixed;
   top: 0;
+  left: 0;
+  width:100%;
   z-index: 1000;
   background-color: #96b9e0;
   color: white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* sombra general */
+  /*height: 120px;*/
 }
 
 /* Encabezado superior */
@@ -120,7 +123,7 @@ main {
   max-width: 1000px;
   margin: 30px auto;
   padding: 0 20px;
-  padding-top: 140px;
+  padding-top: 220px;
 }
 
 /* Rutas */
@@ -179,7 +182,7 @@ main {
 .resena p {
   font-style: italic;
   margin-bottom: 10px;
-  max-width: 100%
+  max-width: 100%;
   word-wrap: break-word;
 }
 
