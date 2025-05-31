@@ -21,8 +21,105 @@ h3 {
   color: #ff9800;
 }
 
-/* HEADER */
+/* HEADER completo */
 header {
+  background-color: #96b9e0;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Primera fila: logo y títulos */
+.encabezado-superior {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 20px;
+}
+
+/* Logo */
+.logo {
+  width: 80px;
+  height: auto;
+  margin-right: 20px;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
+}
+
+/* Títulos */
+.titulos {
+  flex: 1;
+  text-align: center;
+}
+
+.titulos h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.titulos h3 {
+  margin: 5px 0 0 0;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+/* NAV ocupa toda la fila debajo del encabezado */
+.nav {
+  width: 100%;
+  background-color: #7ca9d4; /* opcional, para distinguir */
+}
+
+.nav nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav nav ul li {
+  margin: 0 10px;
+}
+
+.nav nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.3s, transform 0.2s, color 0.3s;
+  border-radius: 6px;
+  background-color: transparent;
+}
+
+
+.nav nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* fondo sutil */
+  color: #003366; /* o cualquier color que combine con el fondo */
+  transform: scale(1.05);
+}
+
+
+/*header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  background-color: #ccc;
+  position: sticky;
+  top: 0; 
+  } 
+  /*box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  z-index: 20;*/  
+
+
+/* HEADER */
+/*header {
    position: fixed;
   top: 0;
   left: 0;
@@ -32,27 +129,27 @@ header {
   color: white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* sombra general */
   /*height: 120px;*/
-}
+}*/
 
 /* Encabezado superior */
-.encabezado-superior {
+/*.encabezado-superior {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding: 10px;
-}
+}*/
 
 /* Logo con sombra */
-.logo {
+/*.logo {
   width: 80px;
   height: auto;
   margin-right: 40px;
   margin-left: 20px;
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
-}
+}*/
 
 /* Títulos centrados */
-.titulos {
+/*.titulos {
   text-align: center;
   flex: 1;
 }
@@ -74,26 +171,39 @@ header {
 
 .h3:hover {
   color: rgb(75, 9, 9)
-}
+}*/
 
 /* NAV */
-nav {
-  background-color:  #96b9e0;
+/*nav {
+  background-color:  #ccc;
   width: 100%;
   border-top: 1px solid #0d47a1;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* sombra general */
-}
+}*/
 
-nav ul {
+/*nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+li {
+    padding: 10px;
+}    
+
+/*nav ul {
   list-style: none;
   margin: 0;
   padding: 10px 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
+}*/
 
-nav ul li {
+/*nav ul li {
   margin: 0 15px;
 }
 
@@ -123,7 +233,7 @@ main {
   max-width: 1000px;
   margin: 30px auto;
   padding: 0 20px;
-  padding-top: 220px;
+  padding-top: 200px;
 }
 
 /* Rutas */
