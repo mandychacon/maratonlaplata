@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <title>Inscripción Maratón La Plata</title>
+  <script src="https://unpkg.com/lucide@latest"></script>
   <style>
     body {
       margin: 0;
@@ -76,6 +77,27 @@
         grid-column: span 2;
       }
     }
+
+    .volver-inicio {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .boton-inicio {
+    background-color: #1565c0;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: inline-block;
+  }
+
+  .boton-inicio:hover {
+    background-color: #0d47a1;
+  }
   </style>
 </head>
 <body>
@@ -120,14 +142,15 @@
       <div class="full-width">
         <button type="submit">Enviar inscripción</button>
       </div>
-      <div style="text-align:center; margin: 30px 0;">
-        <a href="index.html" style="background:#1565c0; color:white; padding:10px 20px; border-radius:8px; text-decoration:none;">
-          ⬅ Volver a Inicio
-        </a>
-      </div>
-      
     </form>
+    <div class="volver-inicio">
+     <a href="index.html" class="boton-inicio"><i data-lucide="home"></i>Inicio</a>
+    </div> 
   </div>
+  <script>
+    lucide.createIcons();
+  </script>
+
   <a href="resenas.html" class="boton-flotante" title="Ver reseñas">
   <i class="fas fa-comments"></i>
   </a>

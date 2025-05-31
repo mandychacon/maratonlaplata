@@ -50,3 +50,25 @@ body {
   margin: 0;
   font-weight: bold;
 }
+
+.volver-inicio {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.volver-inicio .boton {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #2066a7;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.volver-inicio .boton:hover {
+  background-color: #063e6b;
+}
+

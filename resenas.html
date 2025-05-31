@@ -4,8 +4,28 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/stylesresenas.css">
   <title>Reseñas</title>
-  
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+<style>
+   .botones {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .botones a {
+      background: #1565c0;
+      color: white;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .botones a:hover {
+      background: #0d47a1;
+    }
+</style>
 <body>
   <section id="resenas">
     <h2>Reseñas de Participantes</h2>
@@ -26,12 +46,15 @@
         <p>"Todo fue excelente: hidratación, seguridad, y el aliento del público."</p>
         <h4>- Diego M.</h4>
       </div>
-      <div style="text-align:center; margin: 30px 0;">
-        <a href="index.html" style="background:#1565c0; color:white; padding:10px 20px; border-radius:8px; text-decoration:none;">
-          ⬅ Volver a Inicio
-        </a>
+      
       </div>
     </div>
   </section>
+  <div class="botones">
+    <a href="index.html"><i data-lucide="home"></i> Inicio</a>
+ </div> 
+<script>
+    lucide.createIcons();
+</script>
 </body>
 </html>

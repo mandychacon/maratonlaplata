@@ -9,8 +9,29 @@
 
 
   <title>Rutas - Maratón La Plata</title>
-  
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
+<style>
+   .botones {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .botones a {
+      background: #1565c0;
+      color: white;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .botones a:hover {
+      background: #0d47a1;
+    }
+</style>
 <body>
 
   <header>
@@ -41,16 +62,16 @@
 
 </main>
 
-<div style="text-align:center; margin: 30px 0;">
-        <a href="index.html" style="background:#1565c0; color:white; padding:10px 20px; border-radius:8px; text-decoration:none;">
-          ⬅ Volver a Inicio
-        </a>
-</div>
+ <div class="botones">
+    <a href="index.html"><i data-lucide="home"></i> Inicio</a>
+ </div> 
 
 <a href="resenas.html" class="boton-flotante" title="Ver reseñas">
   <i class="fas fa-comments"></i>
 </a>
 
-
+<script>
+    lucide.createIcons();
+</script>
 </body>
 </html>
