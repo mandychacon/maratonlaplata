@@ -5,6 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Maratón Ciudad de La Plata. Evento deportivo y cultural. Información, inscripción, rutas, videos y más.">
+  <meta property="og:title" content="Maratón Internacional La Plata 2025">
+  <meta property="og:description" content="Sumate a la maratón más importante de La Plata. Inscripciones abiertas para todas las categorías.">
+  <meta property="og:image" content="img/logo.png">
+  <meta property="og:url" content="https://mandychacon.github.io/maratonlaplata/">
+  <meta name="twitter:card" content="summary_large_image">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto&display=swap" rel="stylesheet">
@@ -13,6 +19,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <title>Maratón La Plata</title>
   <script src="https://unpkg.com/lucide@latest"></script>
+ 
 </head>
 
 <body>
@@ -30,7 +37,8 @@
       <ul>
         <li><a href="index.html"><i data-lucide="home"></i> Inicio</a></li>
         <li><a href="rutas.html"><i data-lucide="map"></i> Rutas</a></li>
-        <li><a href="inscripcion.html"><i data-lucide="edit-3"></i> Inscripción</a></li>
+        <li><a href="inscripciones.html"><i data-lucide="edit-3"></i> Inscripción</a></li>
+        <li><a href="productos.html"><i data-lucide="package"></i> Productos</a></li>
         <li><a href="contacto.html"><i data-lucide="mail"></i> Contacto</a></li>
         <li><a href="videos.html"><i data-lucide="video"></i> Videos</a></li>
         <li><a href="fotos.html"><i data-lucide="image"></i> Fotos</a></li>
@@ -95,6 +103,42 @@
   <a href="resenas.html" class="boton-flotante" title="Ver reseñas">
   <i class="fas fa-comments"></i>
   </a>
+ <script src="mi-script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./css/carrito_material_ampliado.css">
+ <title>Carrito de Compras</title>
+</head>
+<body>
+
+
+ <h1>Tienda Online</h1>
+
+
+ <!-- Productos -->
+ <div id="productos">
+   <h2>Productos Disponibles</h2>
+   <ul>
+     <li>
+       Producto 1 - $10
+       <button class="agregar-carrito" data-id="1" data-nombre="Producto 1" data-precio="10">Agregar al Carrito</button>
+     </li>
+     <li>
+       Producto 2 - $15
+       <button class="agregar-carrito" data-id="2" data-nombre="Producto 2" data-precio="15">Agregar al Carrito</button>
+     </li>
+     <li>
+       Producto 3 - $20
+       <button class="agregar-carrito" data-id="3" data-nombre="Producto 3" data-precio="20">Agregar al Carrito</button>
+     </li>
+   </ul>
+ </div>
 
 
 </body>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos - Maratón La Plata</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    main {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      color: #004080;
+    }
+
+    #productos-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 15px;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      color: #1565c0;
+      margin: 5px 0;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .volver-inicio {
+      margin-top: 30px;
+    }
+
+    .volver-inicio a {
+      background: #1565c0;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .volver-inicio a:hover {
+      background: #0d47a1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="img/logo.png" alt="Logo Maratón" class="logo">
+      <div class="title-group">
+        <h1>Maratón La Plata</h1>
+        <p>Un recorrido por cultura, historia, deporte y vida saludable</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h1>Productos oficiales</h1>
+    <div id="productos-container"></div>
+
+    <div class="volver-inicio">
+      <a href="index.html">Volver al inicio</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Maratón La Plata | Organizado por Armando Chacón Rodríguez
+  </footer>
+
+  <script src="js/productos.js" defer></script>
+</body>
+</html>

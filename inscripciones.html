@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inscripción Maratón La Plata</title>
+  <meta name="description" content="Completá tu inscripción online para participar en la Maratón Internacional La Plata 2025. Cupos limitados en todas las categorías.">
+   <meta property="og:title" content="Inscripción - Maratón La Plata 2025">
+  <meta property="og:description" content="Inscribite online a la Maratón La Plata 2025. Cupos limitados.">
+  <meta property="og:image" content="img/logo.png">
+  <meta property="og:url" content="https://mandychacon.github.io/maratonlaplata/inscripcion.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="css/inscripciones.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+      padding-top: 40px;
+    }
+    .container {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      width: 90%;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    form {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, select {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input:focus, select:focus {
+      border-color: #007BFF;
+      outline: none;
+    }
+    button {
+      padding: 0.7rem;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    @media (min-width: 600px) {
+      form {
+        grid-template-columns: 1fr 1fr;
+      }
+      .full-width {
+        grid-column: span 2;
+      }
+    }
+    .volver-inicio {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .boton-inicio {
+      background-color: #1565c0;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      display: inline-block;
+    }
+    .boton-inicio:hover {
+      background-color: #0d47a1;
+    }
+
+    .categoria {
+  padding: 10px 16px;
+  border: 2px solid #1565c0;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+  color: #1565c0;
+  background: #eaf2ff;
+  transition: background-color 0.2s, color 0.2s, transform 0.1s;
+}
+
+.categoria:hover {
+  background: #d9e8ff;
+}
+
+.categoria.seleccionada {
+  background: #1565c0;
+  color: #fff;
+  border-color: #0d47a1;
+  transform: translateY(-1px);
+}
+
+    #categorias {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Formulario de Inscripción</h1>
+    
+    <!-- Formulario -->
+<form id="formInscripcion" action="https://formspree.io/f/xovdqpen" method="POST">
+  <div>
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" required />
+  </div>
+  <div>
+    <label for="apellidos">Apellidos</label>
+    <input type="text" id="apellidos" name="apellidos" required />
+  </div>
+  <div>
+    <label for="sexo">Sexo</label>
+    <select id="sexo" name="sexo" required>
+      <option value="">Seleccione</option>
+      <option value="Masculino">Masculino</option>
+      <option value="Femenino">Femenino</option>
+      <option value="Otro">Otro</option>
+    </select>
+  </div>
+  <div>
+    <label for="edad">Edad</label>
+    <input type="number" id="edad" name="edad" min="1" max="120" required />
+  </div>
+  <div class="full-width">
+    <label for="pais">País de residencia</label>
+    <input type="text" id="pais" name="pais" required />
+  </div>
+</form>
+
+<!-- Categorías -->
+<div id="categorias">
+  <div class="categoria" data-nombre="5km" data-precio="1000">5 km</div>
+  <div class="categoria" data-nombre="10km" data-precio="2000">10 km</div>
+  <div class="categoria" data-nombre="21km" data-precio="3000">21 km</div>
+  <div class="categoria" data-nombre="42km" data-precio="4000">42 km</div>
+</div>
+
+
+    <!-- Botones -->
+    <div class="full-width botones">
+      <button type="button" id="abrirCarrito">Chequear carrito de inscripción</button>
+      <button type="button" id="btnLimpiarFormulario">Limpiar formulario</button>
+      <button type="submit" id="btnEnviar" style="display:none;">Enviar inscripción</button>
+    </div>
+
+    <!-- Volver a inicio -->
+    <div class="volver-inicio">
+      <a href="index.html" class="boton-inicio"><i data-lucide="home"></i>Inicio</a>
+    </div>
+  </div>
+
+  <!-- Modal (Burbuja de carrito) -->
+  <div id="modalCarrito" class="modal oculto">
+    <div class="modal-contenido">
+      <span class="cerrar-modal" id="cerrarModal">&times;</span>
+      <h2>Carrito de inscripción</h2>
+      <div id="contenidoCarrito"></div>
+      <div id="totalCarrito" class="total-carrito">
+        Total: $0
+      </div>
+      
+      <div class="botones">
+        <button id="agregarCategoriaBtn">Agregar categoría</button>
+        <button id="btnLimpiarCarrito">Limpiar carrito</button>
+        <button id="btnPagarEnviar">Pagar y enviar inscripción</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/inscripciones.js" defer></script>
+</body>
+</html>

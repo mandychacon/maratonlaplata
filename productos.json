@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "titulo": "Zapatillas de Running Pro",
+    "precio": 45000,
+    "imagen": "img/productos/zapatillas.png"
+  },
+  {
+    "id": 2,
+    "titulo": "Remera Oficial Maratón La Plata",
+    "precio": 15000,
+    "imagen": "img/productos/remera.png"
+  },
+  {
+    "id": 3,
+    "titulo": "Gorra Técnica Antitranspirante",
+    "precio": 8000,
+    "imagen": "img/productos/gorra.png"
+  },
+  {
+    "id": 4,
+    "titulo": "Botella de Hidratación 500ml",
+    "precio": 6000,
+    "imagen": "img/productos/botella.png"
+  }
+]
